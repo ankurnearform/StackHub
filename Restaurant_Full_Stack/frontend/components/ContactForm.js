@@ -48,7 +48,7 @@ function ReservationForm() {
         <input type="number" value={guests} onChange={(e) => setGuests(e.target.value)} required />
       </label>
       <br />
-      <button type="submit" style={{ backgroundColor: 'black' }}>Book Reservation</button>
+      <button type="submit" style={{ backgroundColor: 'red' }}>Book Reservation</button>
     </form>
   );
 }
