@@ -41,7 +41,7 @@ function ReservationForm() {
       </label>
       <br />
       <label>Time:
-        <input type="times" value={time} onChange={(e) => setTime(e.target.value)} required />
+        <input type="time" value={time} onChange={(e) => setTime(e.target.value)} required />
       </label>
       <br />
       <label>Number of Guests:
