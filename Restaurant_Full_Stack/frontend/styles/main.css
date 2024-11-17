@@ -33,6 +33,19 @@ nav {
     background-color: #ffa726; /* Orange peel background */
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ffa726; /* Orange peel background */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
 nav a {
     color: white;
     padding: 0.5em 1em;
