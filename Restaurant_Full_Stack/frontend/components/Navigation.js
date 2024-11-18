@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Home from './Home';
-import Menu from './Menu';
-import Services from './Services';
+import Home from './Home'; // Your Home component specific to Restaurant Industry
+import Menu from './Menu';  // Assuming Menu.js is in the components folder
+import Services from './Services'; // Services component for additional services provided by the restaurant
 
 function RestaurantNavigation() {
   const [currentPage, setCurrentPage] = useState('home');
