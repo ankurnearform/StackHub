@@ -1,11 +1,9 @@
 const Contact = () => {
-  const contactDetails = { phone: '123-456-7890', email: 'contact@restaurant.com' };
-  
   return (
     <div>
       <h2>Contact Us</h2>
-      <p>Phone: {contactDetails.phone}</p>
-      <p>Email: {contactDetails.email}</p>
+      <p>Phone: +1234567890</p>
+      <p>Email: contact@restaurant.com</p>
     </div>
   );
 };

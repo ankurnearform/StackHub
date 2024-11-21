@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Home from './Home'; // Your Home component specific to Restaurant Industry
 import Menu from './Menu';  // Assuming Menu.js is in the components folder
 import Services from './Services'; // Services component for additional services provided by the restaurant
+import Contact from './Contact'; // Contact component for contacting the restaurant
 
 function RestaurantNavigation() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -12,6 +13,8 @@ function RestaurantNavigation() {
         return <Menu />;
       case 'services':
         return <Services />;
+      case 'contact':
+        return <Contact />;
       default:
         return <Home />;
     }
@@ -23,7 +26,7 @@ function RestaurantNavigation() {
         <button onClick={() => setCurrentPage('home')}>Home</button>
         <button onClick={() => setCurrentPage('menu')}>Menu</button>
         <button onClick={() => setCurrentPage('services')}>Services</button>
-        <li><a href='/contact'>Contact Us</a></li>
+        <button onClick={() => setCurrentPage('contact')}>Contact</button>
       </nav>
       {renderPage()}
     </div>
