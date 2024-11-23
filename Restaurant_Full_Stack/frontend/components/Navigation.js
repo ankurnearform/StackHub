@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Home from './Home'; // Your Home component specific to Restaurant Industry
 import Menu from './Menu';  // Assuming Menu.js is in the components folder
 import Services from './Services'; // Services component for additional services provided by the restaurant
+import Contact from './Contact'; // Import path for the Contact component is updated
+import { NavLink, Link } from 'react-router-dom'; // Import NavLink and Link for navigation
 
 function RestaurantNavigation() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -12,6 +14,8 @@ function RestaurantNavigation() {
         return <Menu />;
       case 'services':
         return <Services />;
+      case 'contact':
+        return <Contact />;
       default:
         return <Home />;
     }
@@ -23,6 +27,8 @@ function RestaurantNavigation() {
         <button onClick={() => setCurrentPage('home')}>Home</button>
         <button onClick={() => setCurrentPage('menu')}>Menu</button>
         <button onClick={() => setCurrentPage('services')}>Services</button>
+        <NavLink to='/contact' activeClassName='active' onClick={() => setCurrentPage('contact')}>Contact Us</NavLink>
+        <Link to='/contact'>Contact Us</Link> {/* Maintained additional Link for contact */}
       </nav>
       {renderPage()}
     </div>
