@@ -1,0 +1,15 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "dependencies": {
+    "buffer": "^5.6.0",
+    "parcel": "^2.13.0",
+    "process": "^0.11.10",
+    "react-router-dom": "^6.28.0"
+  },
+  "alias": {
+    "fs": false,
+    "process": "process/browser",
+    "buffer": "buffer/"
+  }
+}
